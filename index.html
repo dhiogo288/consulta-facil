@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Descubra se já existem marcas iguais ou semelhantes no Brasil.">
+<title>Consulta Fácil — Já existe essa marca?</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="/">Consulta<span>Fácil</span></a>
+    <span class="source">Pesquisa de marcas no Brasil</span>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="tag">PESQUISA DE MARCAS</div>
+    <h1>Já existe uma marca<br><em>com esse nome?</em></h1>
+    <p class="lead">Pesquise marcas e descubra nomes iguais ou semelhantes antes de seguir com seu projeto.</p>
+
+    <div class="searchbox">
+      <form id="form">
+        <div class="inputline">
+          <input id="q" placeholder="Digite o nome da marca..." autocomplete="off" autofocus>
+          <button>Pesquisar</button>
+        </div>
+        <div class="filters">
+          <label>Classe <select id="classe">
+            <option value="">Todas</option>
+            <option>9</option><option>25</option><option>35</option><option>41</option><option>42</option>
+          </select></label>
+          <label class="check"><input id="vivas" type="checkbox"> Somente processos ativos</label>
+        </div>
+      </form>
+      <div class="examples">Exemplos: <button class="example">NEXUS</button><button class="example">ORION</button><button class="example">LUMI</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="results-section">
+  <div class="wrap">
+    <div id="state" class="state">Digite um nome para começar a pesquisa.</div>
+    <div id="results"></div>
+  </div>
+</section>
+
+<section class="info">
+ <div class="wrap info-grid">
+  <div><div class="num">01</div><h2>Pesquise</h2><p>Digite o nome que você pretende usar.</p></div>
+  <div><div class="num">02</div><h2>Compare</h2><p>Veja nomes iguais ou semelhantes encontrados.</p></div>
+  <div><div class="num">03</div><h2>Confirme</h2><p>Use a fonte oficial antes de tomar uma decisão.</p></div>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap">Consulta Fácil · Projeto em desenvolvimento</div></footer>
+<script src="/app.js"></script>
+</body>
+</html>
